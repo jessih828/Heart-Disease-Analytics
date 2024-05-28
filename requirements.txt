@@ -1,7 +1,7 @@
 streamlit 
 plotly 
 scikit-learn
-streamlit_option_menu 
+streamlit_option_menu==0.3.12
 tensorflow 
 xgboost 
 pandas 
