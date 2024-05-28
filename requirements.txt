@@ -2,7 +2,7 @@ absl-py==2.1.0
 aiohttp==3.9.3
 aiosignal==1.3.1
 alembic==1.13.1
-altair==5.2.0
+altair>=4.0.0
 annotated-types==0.6.0
 anyio==4.3.0
 appdirs==1.4.4
@@ -21,9 +21,9 @@ beautifulsoup4==4.12.3
 bleach==6.1.0
 blinker==1.7.0
 blis==0.7.11
-bokeh==2.4.3
+bokeh>=2.0.0
 Bottleneck==1.3.7
-branca==0.7.2
+branca>=0.4.0
 build==1.2.1
 cachetools==5.3.3
 catalogue==2.0.10
@@ -35,7 +35,7 @@ chardet==5.2.0
 charset-normalizer==3.3.2
 chroma-hnswlib==0.7.3
 chromadb==0.5.0
-click==7.1.2
+click>=7.0,<8.0pip 
 click-plugins==1.1.1
 cligj==0.7.2
 cloudpathlib==0.16.0
@@ -54,7 +54,7 @@ Cython==3.0.9
 dacite==1.8.1
 dask==2.30.0
 dataclasses-json==0.6.6
-dataprep==0.4.1
+dataprep>=0.3.0
 datatile==1.0.3
 debugpy==1.8.0
 decorator==4.4.2
@@ -172,7 +172,7 @@ markdown-it-py==3.0.0
 markdownlit==0.0.7
 MarkupSafe==2.1.4
 marshmallow==3.21.2
-matplotlib==3.8.2
+matplotlib>=3.0.0
 matplotlib-inline==0.1.6
 mdurl==0.1.2
 Metaphone==0.6
@@ -203,7 +203,7 @@ nltk==3.6.3
 notebook==6.5.6
 notebook_shim==0.2.4
 numba==0.58.1
-numpy==1.25.2
+numpy>=1.19.0
 oauthlib==3.2.2
 onnxruntime==1.18.0
 openai==1.30.1
@@ -226,7 +226,7 @@ ordered-set==4.1.0
 orjson==3.10.3
 overrides==7.7.0
 packaging==23.2
-pandas==1.5.3
+pandas>=1.0.0
 pandas-profiling==3.2.0
 pandas-summary==0.2.0
 pandocfilters==1.5.1
@@ -298,7 +298,7 @@ rpds-py==0.17.1
 rsa==4.9
 schedule==1.2.1
 scikit-image==0.23.1
-scikit-learn==1.4.0
+scikit-learn>=0.23.0
 scipy==1.11.4
 seaborn==0.12.2
 Send2Trash==1.8.2
@@ -318,7 +318,7 @@ st-annotated-text==4.0.1
 stack-data==0.5.1
 starlette==0.37.2
 statsmodels==0.14.1
-streamlit==1.35.0
+streamlit>=1.0.0
 streamlit-camera-input-live==0.2.0
 streamlit-card==1.0.0
 streamlit-embedcode==0.1.2
@@ -326,7 +326,7 @@ streamlit-extras==0.4.0
 streamlit-faker==0.0.3
 streamlit-image-coordinates==0.1.6
 streamlit-keyup==0.2.3
-streamlit-option-menu==0.3.12
+streamlit_option_menu>=0.3.0
 streamlit-toggle-switch==1.0.2
 streamlit-vertical-slider==2.5.5
 sympy==1.12
