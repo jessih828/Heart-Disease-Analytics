@@ -1,8 +1,9 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 from app_page1 import introduction_page
-from app_page2 import heart_disease_prediction_page
-from app_page3 import about_the_dataset
+from app_page2 import about_the_dataset
+from app_page3 import heart_disease_prediction_page
+
 
 def main():
     st.set_page_config(page_title="Heart Disease Prediction", page_icon="❤️", layout="wide")
@@ -11,8 +12,8 @@ def main():
     with st.sidebar:
         selected = option_menu(
             menu_title=None, 
-            options=["Introduction", "Heart Disease Prediction", "Data Exploration & Machine Learning Models"], 
-            icons=['house', 'heart', 'database'], 
+            options=["Introduction", "Data Exploration & Machine Learning Models", "Heart Disease Prediction"], 
+            icons=['house', 'database', 'heart'], 
             menu_icon="cast", 
             default_index=0)
         
@@ -33,10 +34,10 @@ def main():
     # Load the selected page
     if selected == "Introduction":
         introduction_page()
-    elif selected == "Heart Disease Prediction":
-        heart_disease_prediction_page()
     elif selected == "Data Exploration & Machine Learning Models":
         about_the_dataset()
+    elif selected == "Heart Disease Prediction":
+        heart_disease_prediction_page()
 
 if __name__ == "__main__":
     main()
