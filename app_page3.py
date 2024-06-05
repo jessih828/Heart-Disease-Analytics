@@ -20,14 +20,14 @@ def prob(prediction_proba):
 def heart_disease_prediction_page():
     st.title("Heart Disease Prediction: Using Grid Search Optimized XGBoost")
     st.markdown("""
-    Out of all the machine learning models I ran, I decided to use Grid Search Optimized XGBoost as my final model. The reason for this choice is that it achieved the highest performance among the models tested.
+    Out of all the machine learning models I ran, I decided to use Grid Search Optimized XGBoost as my final model. 
 
     Here are the detailed performance metrics for the model:
-    - **Accuracy**: 0.91
-    - **Precision**: 0.964
-    - **Recall**: 0.883
-    - **F1 Score**: 0.922
-    - **Specificity**: 0.95
+    - **Accuracy**: 0.88
+    - **Precision**: 0.88
+    - **Recall**: 0.88
+    - **F1 Score**: 0.89
+    - **Specificity**: 0.93
     """)
 
 

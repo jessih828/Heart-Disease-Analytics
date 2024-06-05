@@ -20,12 +20,11 @@ results = {
         'roc_curve': {'fpr': [0.0, 0.036585365853658534, 0.04878048780487805, 0.06097560975609756, 0.06097560975609756, 0.0975609756097561, 0.10975609756097561, 0.10975609756097561, 0.13414634146341464, 0.17073170731707318, 0.17073170731707318, 0.2073170731707317, 0.2926829268292683, 0.3170731707317073, 0.3902439024390244, 0.4024390243902439, 0.4024390243902439, 0.4268292682926829, 0.47560975609756095, 0.5365853658536586, 1.0], 
                       'tpr': [0.0, 0.47058823529411764, 0.49019607843137253, 0.5196078431372549, 0.5392156862745098, 0.5686274509803921, 0.6666666666666666, 0.7058823529411765, 0.7647058823529411, 0.7941176470588235, 0.8529411764705882, 0.8627450980392157, 0.9117647058823529, 0.9215686274509803, 0.9215686274509803, 0.9215686274509803, 0.9411764705882353, 0.9509803921568627, 0.9509803921568627, 0.9607843137254902, 1.0], 
                       'roc_auc': 0.88},
-        'cross_validated_roc_auc': "0.8970 ± 0.0235",
-        'cross_validated_accuracy': "0.8225 ± 0.0071",
-        'cross_validated_precision': "0.8188 ± 0.0362",
-        'cross_validated_recall': "0.8171 ± 0.0658",
-        'cross_validated_f1_score': "0.8595 ± 0.0245",
-        'summary': "The pruned Decision Tree model demonstrates robust performance with an accuracy of 0.80 and a ROC AUC of 0.88 on the test set. The cross-validation results further confirm the model\'s consistency and reliability. These metrics suggest that the model generalizes well across different subsets of the data, maintaining a balance between precision and recall. However, to further enhance the model\'s performance and robustness, future steps could include exploring ensemble methods such as Random Forest or XGBoost, conducting additional hyperparameter tuning, or incorporating more diverse and comprehensive datasets. These actions could potentially lead to even better generalization and predictive accuracy."
+        'mse': 0.15,
+        'mae': 0.15,
+        'summary': (
+        'The pruned Decision Tree model demonstrates strong overall performance with high precision, balanced recall, and good specificity. The equal MSE and MAE values suggest uniformly distributed errors without significant outliers. The high ROC AUC value indicates excellent classification capability. This model is effective for tasks requiring high precision and balanced sensitivity.'
+        )
     },
 
     'Random Forest': {
@@ -37,18 +36,10 @@ results = {
         'roc_curve': {'fpr': [0.0, 0.012195121951219513, 0.012195121951219513, 0.012195121951219513, 0.012195121951219513, 0.012195121951219513, 0.012195121951219513, 0.012195121951219513, 0.024390243902439025, 0.024390243902439025, 0.024390243902439025, 0.024390243902439025, 0.024390243902439025, 0.024390243902439025, 0.036585365853658534, 0.036585365853658534, 0.036585365853658534, 0.036585365853658534, 0.036585365853658534, 0.036585365853658534, 0.036585365853658534, 0.036585365853658534, 0.036585365853658534, 0.04878048780487805, 0.04878048780487805, 0.06097560975609756, 0.06097560975609756, 0.06097560975609756, 0.07317073170731707, 0.07317073170731707, 0.08536585365853659, 0.08536585365853659, 0.0975609756097561, 0.0975609756097561, 0.10975609756097561, 0.12195121951219512, 0.12195121951219512, 0.13414634146341464, 0.14634146341463414, 0.14634146341463414, 0.18292682926829268, 0.18292682926829268, 0.1951219512195122, 0.1951219512195122, 0.24390243902439024, 0.2682926829268293, 0.2682926829268293, 0.3048780487804878, 0.32926829268292684, 0.3902439024390244, 0.4268292682926829, 0.45121951219512196, 0.4634146341463415, 0.4634146341463415, 0.4878048780487805, 0.524390243902439, 0.5365853658536586, 0.5609756097560976, 0.573170731707317, 0.5975609756097561, 0.6219512195121951, 0.6585365853658537, 0.7073170731707317, 0.7804878048780488, 0.8414634146341463, 0.9146341463414634, 1.0],
                       'tpr': [0.0, 0.0392156862745098, 0.058823529411764705, 0.09803921568627451, 0.11764705882352941, 0.19607843137254902, 0.21568627450980393, 0.29411764705882354, 0.3235294117647059, 0.3627450980392157, 0.37254901960784315, 0.4019607843137255, 0.4117647058823529, 0.43137254901960786, 0.4411764705882353, 0.45098039215686275, 0.47058823529411764, 0.5098039215686274, 0.5392156862745098, 0.5588235294117647, 0.5882352941176471, 0.6078431372549019, 0.6372549019607843, 0.6470588235294118, 0.6862745098039216, 0.696078431372549, 0.7156862745098039, 0.7352941176470589, 0.7450980392156863, 0.7647058823529411, 0.7647058823529411, 0.7745098039215687, 0.7745098039215687, 0.8137254901960784, 0.8137254901960784, 0.8235294117647058, 0.8529411764705882, 0.8529411764705882, 0.8725490196078431, 0.8823529411764706, 0.8823529411764706, 0.9019607843137255, 0.9019607843137255, 0.9215686274509803, 0.9215686274509803, 0.9313725490196079, 0.9607843137254902, 0.9607843137254902, 0.9607843137254902, 0.9607843137254902, 0.9607843137254902, 0.9803921568627451, 0.9901960784313726, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
                       'roc_auc': 0.93},
-        'cross_validated_roc_auc': "0.9140 ± 0.0283",
-        'cross_validated_accuracy': "0.8518 ± 0.0236",
-        'cross_validated_precision': "0.8572 ± 0.0436",
-        'cross_validated_recall': "0.8859 ± 0.0168",
-        'cross_validated_f1_score': "0.8669 ± 0.0215",
+        'mse': 0.16,
+        'mae': 0.16,
         'summary': (
-            "The Random Forest model demonstrates strong performance with an accuracy of 0.8587 and a ROC AUC of 0.9330 on the test set. "
-            "The cross-validation results further confirm the model's consistency and reliability. These metrics suggest that the model "
-            "generalizes well across different subsets of the data, maintaining a balance between precision and recall. However, to further "
-            "enhance the model's performance and robustness, future steps could include exploring additional hyperparameter tuning, or "
-            "incorporating more diverse and comprehensive datasets. These actions could potentially lead to even better generalization "
-            "and predictive accuracy.")
+            "The Random Forest model demonstrates strong overall performance with high precision, balanced recall, and excellent ROC AUC value. The equal MSE and MAE values suggest uniformly distributed errors without significant outliers. This model is highly effective for tasks requiring high accuracy and excellent class separability.")
     },
 
 
@@ -59,21 +50,13 @@ results = {
         'recall': 0.90,
         'f1_score': 0.89,
         'specificity': 0.85,
-        'cross_validated_roc_auc': "0.9220 ± 0.0282",
-        'cross_validated_accuracy': "0.8573 ± 0.0267",
-        'cross_validated_precision': "0.8565 ± 0.0391",
-        'cross_validated_recall': "0.8938 ± 0.0197",
-        'cross_validated_f1_score': "0.8800 ± 0.0240",
         'roc_curve': {'fpr': [0.0, 0.0, 0.0, 0.0, 0.0, 0.012195121951219513, 0.024390243902439025, 0.024390243902439025, 0.024390243902439025, 0.024390243902439025, 0.024390243902439025, 0.024390243902439025, 0.024390243902439025, 0.024390243902439025, 0.024390243902439025, 0.024390243902439025, 0.024390243902439025, 0.024390243902439025, 0.024390243902439025, 0.036585365853658534, 0.036585365853658534, 0.036585365853658534, 0.036585365853658534, 0.036585365853658534, 0.036585365853658534, 0.036585365853658534, 0.04878048780487805, 0.04878048780487805, 0.07317073170731707, 0.07317073170731707, 0.08536585365853659, 0.08536585365853659, 0.0975609756097561, 0.0975609756097561, 0.0975609756097561, 0.10975609756097561, 0.12195121951219512, 0.14634146341463414, 0.14634146341463414, 0.14634146341463414, 0.18292682926829268, 0.18292682926829268, 0.1951219512195122, 0.1951219512195122, 0.2073170731707317, 0.2073170731707317, 0.21951219512195122, 0.24390243902439024, 0.34146341463414637, 0.3780487804878049, 0.3902439024390244, 0.3902439024390244, 0.4268292682926829, 0.45121951219512196, 0.47560975609756095, 0.5, 0.5121951219512195, 0.5121951219512195, 0.5365853658536586, 0.5609756097560976, 0.573170731707317, 0.5975609756097561, 0.7073170731707317, 0.7195121951219512, 0.7682926829268293, 0.7804878048780488, 0.9024390243902439, 0.926829268292683, 1.0], 
                       'tpr': [0.0, 0.00980392156862745, 0.0196078431372549, 0.08823529411764706, 0.12745098039215685, 0.14705882352941177, 0.1568627450980392, 0.18627450980392157, 0.19607843137254902, 0.24509803921568626, 0.27450980392156865, 0.29411764705882354, 0.3235294117647059, 0.3431372549019608, 0.37254901960784315, 0.39215686274509803, 0.4411764705882353, 0.4803921568627451, 0.5196078431372549, 0.5294117647058824, 0.5686274509803921, 0.5980392156862745, 0.6176470588235294, 0.6568627450980392, 0.6862745098039216, 0.7156862745098039, 0.7254901960784313, 0.7549019607843137, 0.7549019607843137, 0.7843137254901961, 0.7843137254901961, 0.7941176470588235, 0.803921568627451, 0.8137254901960784, 0.8333333333333334, 0.8431372549019608, 0.8431372549019608, 0.8431372549019608, 0.8823529411764706, 0.9019607843137255, 0.9019607843137255, 0.9215686274509803, 0.9215686274509803, 0.9313725490196079, 0.9313725490196079, 0.9411764705882353, 0.9411764705882353, 0.9411764705882353, 0.9411764705882353, 0.9607843137254902, 0.9705882352941176, 0.9803921568627451, 0.9803921568627451, 0.9803921568627451, 0.9803921568627451, 0.9803921568627451, 0.9803921568627451, 0.9901960784313726, 0.9901960784313726, 0.9901960784313726, 0.9901960784313726, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], 
                       'roc_auc': 0.93},
+        'mse': 0.12,
+        'mae': 0.12,
         'summary': (
-            "The Random Forest model with Grid Search demonstrates strong performance with an accuracy of 0.8804 and a ROC AUC of 0.9314 on the test set. "
-            "The cross-validation results further confirm the model's consistency and reliability, with a mean cross-validated ROC AUC of 0.9220 ± 0.0282, "
-            "accuracy of 0.8573 ± 0.0267, precision of 0.8565 ± 0.0391, recall of 0.8938 ± 0.0197, and F1 score of 0.8800 ± 0.0240. "
-            "These metrics suggest that the model generalizes well across different subsets of the data, maintaining a balance between precision and recall. "
-            "However, to further enhance the model's performance and robustness, future steps could include exploring additional hyperparameter tuning or "
-            "incorporating more diverse and comprehensive datasets. These actions could potentially lead to even better generalization and predictive accuracy."
+            "The Random Forest model with Grid Search demonstrates very strong overall performance with high precision, recall, and F1 score. The specificity is also robust, indicating good performance in identifying true negatives. This model is highly effective for tasks requiring both high sensitivity and specificity, making it a reliable choice for balanced predictive accuracy"
             )
 
     },
@@ -86,21 +69,13 @@ results = {
         'f1_score': 0.89,
         'specificity': 0.86,
         'roc_auc': 0.93,
-        'cross_validated_roc_auc': "0.9154 ± 0.0215",
-        'cross_validated_accuracy': "0.8496 ± 0.0237",
-        'cross_validated_precision': "0.8546 ± 0.0360",
-        'cross_validated_recall': "0.8799 ± 0.0236",
-        'cross_validated_f1_score': "0.8664 ± 0.0196",
         'roc_curve': {'fpr': [0.0, 0.0, 0.0, 0.012195121951219513, 0.012195121951219513, 0.024390243902439025, 0.024390243902439025, 0.04878048780487805, 0.04878048780487805, 0.06097560975609756, 0.06097560975609756, 0.07317073170731707, 0.07317073170731707, 0.0975609756097561, 0.0975609756097561, 0.10975609756097561, 0.10975609756097561, 0.13414634146341464, 0.13414634146341464, 0.14634146341463414, 0.14634146341463414, 0.2073170731707317, 0.2073170731707317, 0.21951219512195122, 0.21951219512195122, 0.23170731707317074, 0.23170731707317074, 0.25609756097560976, 0.25609756097560976, 0.2682926829268293, 0.2682926829268293, 0.2804878048780488, 0.2804878048780488, 0.3048780487804878, 0.3048780487804878, 0.5121951219512195, 0.5121951219512195, 0.9512195121951219, 0.9512195121951219, 1.0],
                       'tpr': [0.0, 0.00980392156862745, 0.13725490196078433, 0.13725490196078433, 0.4117647058823529, 0.4117647058823529, 0.5686274509803921, 0.5686274509803921, 0.7745098039215687, 0.7745098039215687, 0.8235294117647058, 0.8235294117647058, 0.8627450980392157, 0.8627450980392157, 0.8725490196078431, 0.8725490196078431, 0.8921568627450981, 0.8921568627450981, 0.9019607843137255, 0.9019607843137255, 0.9117647058823529, 0.9117647058823529, 0.9215686274509803, 0.9215686274509803, 0.9313725490196079, 0.9313725490196079, 0.9411764705882353, 0.9411764705882353, 0.9509803921568627, 0.9509803921568627, 0.9607843137254902, 0.9607843137254902, 0.9705882352941176, 0.9705882352941176, 0.9803921568627451, 0.9803921568627451, 0.9901960784313726, 0.9901960784313726, 1.0, 1.0],
                       'roc_auc': 0.939},
+        'mse': 0.11,
+        'mae': 0.11,
         'summary': (
-            "The XGBoost model demonstrates strong performance with an accuracy of 0.88 and a ROC AUC of 0.9471 on the test set. "
-            "The cross-validation results further confirm the model's consistency and reliability, with a mean cross-validated ROC AUC of 0.9219 ± 0.0282, "
-            "accuracy of 0.8573 ± 0.0267, precision of 0.8565 ± 0.0391, recall of 0.8938 ± 0.0197, and F1 score of 0.8800 ± 0.0240. "
-            "These metrics suggest that the model generalizes well across different subsets of the data, maintaining a balance between precision and recall. "
-            "However, to further enhance the model's performance and robustness, future steps could include exploring additional hyperparameter tuning or "
-            "incorporating more diverse and comprehensive datasets. These actions could potentially lead to even better generalization and predictive accuracy."
+            "The XGBClassifier model demonstrates very strong overall performance with high precision, recall, F1 score, and excellent ROC AUC value. The specificity is robust, indicating good performance in identifying true negatives. The equal MSE and MAE values suggest uniformly distributed errors without significant outliers. This model is highly effective for tasks requiring both high accuracy and excellent class separability, making it a reliable and robust choice for predictive modeling."
         )
     },
 
@@ -111,15 +86,12 @@ results = {
         'recall': 0.88,
         'f1_score': 0.89,
         'specificity': 0.93,
-        'cross_validated_roc_auc': "0.929955348476024 ± 0.020801285088247048",
-        'cross_validated_accuracy': "0.8790864813494892 ± 0.016648261784001597",
-        'cross_validated_precision': "0.8799233509929671 ± 0.03295534918290866",
-        'cross_validated_recall': "0.907610172781984 ± 0.028561606424072978",
-        'cross_validated_f1_score': "0.8926840718133123 ± 0.013538822096832978",
         'roc_curve': {'fpr': [0.0, 0.0, 0.0, 0.012195121951219513, 0.012195121951219513, 0.024390243902439025, 0.024390243902439025, 0.036585365853658534, 0.036585365853658534, 0.04878048780487805, 0.04878048780487805, 0.06097560975609756, 0.06097560975609756, 0.07317073170731707, 0.07317073170731707, 0.08536585365853659, 0.08536585365853659, 0.0975609756097561, 0.0975609756097561, 0.14634146341463414, 0.14634146341463414, 0.23170731707317074, 0.23170731707317074, 0.24390243902439024, 0.24390243902439024, 0.2682926829268293, 0.2682926829268293, 0.5365853658536586, 0.5365853658536586, 0.5853658536585366, 0.5853658536585366, 0.6097560975609756, 0.6097560975609756, 1.0], 
                       'tpr': [0.0, 0.00980392156862745, 0.029411764705882353, 0.029411764705882353, 0.46078431372549017, 0.46078431372549017, 0.6078431372549019, 0.6078431372549019, 0.6176470588235294, 0.6176470588235294, 0.6666666666666666, 0.6666666666666666, 0.7941176470588235, 0.7941176470588235, 0.803921568627451, 0.803921568627451, 0.8137254901960784, 0.8137254901960784, 0.8921568627450981, 0.8921568627450981, 0.9215686274509803, 0.9215686274509803, 0.9411764705882353, 0.9411764705882353, 0.9509803921568627, 0.9509803921568627, 0.9705882352941176, 0.9705882352941176, 0.9803921568627451, 0.9803921568627451, 0.9901960784313726, 0.9901960784313726, 1.0, 1.0], 
                       'roc_auc': 0.937},
-        'summary': (" ")
+        'mse': 0.12,
+        'mae': 0.12,
+        'summary': "The XGBClassifier with Grid Search demonstrates very strong overall performance with high precision, recall, and F1 score. The specificity is particularly notable at 0.93, indicating excellent capability in identifying true negatives. This model is highly effective for tasks requiring balanced accuracy, precision, recall, and exceptional specificity. It is a reliable choice for predictive modeling where both positive and negative classes are important."
     }
 }
 
@@ -213,7 +185,7 @@ def about_the_dataset():
     st.write("""
     In this section, I explore different machine learning models to predict heart disease based on clinical features. 
     I have used models such as decision trees, random forests, XGBoost, and their optimized versions using grid search.
-    You can compare the performance of these models based on accuracy, ROC curves, and confusion matrices, and by clicking the "Use Grid Search" bottom, you can see the optimized version of the model.
+    You can compare the performance of these models based on accuracy, ROC curves, and confusion matrices.
     """)
 
     # Interactive Model Selection
@@ -265,14 +237,10 @@ def about_the_dataset():
         roc_fig.update_layout(title=f'ROC Curve for {model_choice}', xaxis_title='False Positive Rate', yaxis_title='True Positive Rate')
         
         st.plotly_chart(roc_fig)
-
-    # show Cross-Validation Results
-    if st.checkbox('Show Cross-Validation Results'):
-        st.write(f"**Cross-Validated ROC AUC**: {results[model_choice]['cross_validated_roc_auc']}")
-        st.write(f"**Cross-Validated Accuracy**: {results[model_choice]['cross_validated_accuracy']}")
-        st.write(f"**Cross-Validated Precision**: {results[model_choice]['cross_validated_precision']}")
-        st.write(f"**Cross-Validated Recall**: {results[model_choice]['cross_validated_recall']}")
-        st.write(f"**Cross-Validated F1 Score**: {results[model_choice]['cross_validated_f1_score']}")
+    
+    if st.checkbox('Show MSE and MAE'):
+        st.write(f"**Mean Square Error**: {results[model_choice]['mse']}")
+        st.write(f"**Mean Absolute Error**: {results[model_choice]['mae']}")
 
     # sumamry of the model
     if st.checkbox('Show Model Summary'):
